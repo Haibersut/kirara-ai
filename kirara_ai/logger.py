@@ -48,7 +48,7 @@ logger.add(
 _global_logger = logger
 
 # 内存中保存最近的日志，用于新连接时推送历史日志
-_recent_logs = deque(maxlen=500)  # 保存最近500条日志
+_recent_logs = deque(maxlen=50)  # 保存最近500条日志
 
 # 通用日志处理器管理类
 class LogBroadcaster:
